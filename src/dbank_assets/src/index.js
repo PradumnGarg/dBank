@@ -37,5 +37,5 @@ document.querySelector("form").addEventListener("submit", async function(event) 
 
 async function update() {
   const currentAmount = await dbank.checkBalance();
-  document.getElementById("value").innerText = Math.round(currentAmount * 100) / 100;
+  document.getElementById("value").innerText = Math.round(currentAmount*100)/100;
 };
